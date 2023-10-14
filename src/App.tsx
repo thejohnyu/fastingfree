@@ -4,6 +4,9 @@ import "./App.css";
 import "@aws-amplify/ui-react/styles.css";
 import LeftSideBar from "./components/left-side-bar/LeftSideBar";
 import MainContent from "./components/main-content/MainContent";
+import Footer from "./components/footer/Footer";
+import RightSideBar from "./components/right-side-bar/RightSideBar";
+import Header from "./components/header/Header";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -11,37 +14,21 @@ function App() {
   return (
     <>
       <div className="parent">
-        <header className="section coral">Header</header>
-        <div className="left-side section blue">
+        <header className="section">
+          <Header />
+        </header>
+        <div className="left-side section">
           <LeftSideBar />
         </div>
-        <main className="section green">
-          {/* <div className="center">
-            <div className="progress">
-              <svg className="progress-bar" width="300" height="300">
-                <circle
-                  className="progress-circle"
-                  cx="150"
-                  cy="150"
-                  r="135"
-                ></circle>
-                <circle
-                  className="progress-circle"
-                  cx="150"
-                  cy="150"
-                  r="135"
-                ></circle>
-              </svg>
-              <div className="text">
-                Elapsed Time (27%)
-                <span>Completed</span>
-              </div>
-            </div>
-          </div> */}
+        <main className="section">
           <MainContent />
         </main>
-        <div className="right-side section yellow">Right Sidebar</div>
-        <footer className="section coral">Footer</footer>
+        <div className="right-side section">
+          <RightSideBar />
+        </div>
+        <footer className="section">
+          <Footer />
+        </footer>
       </div>
     </>
   );
