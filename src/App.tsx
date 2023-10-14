@@ -15,9 +15,28 @@ function App() {
           <LeftSideBar />
         </div>
         <main className="section green">
-          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="50" />
-          </svg>
+          <div className="center">
+            <div className="progress">
+              <svg className="progress-bar" width="300" height="300">
+                <circle
+                  className="progress-circle"
+                  cx="150"
+                  cy="150"
+                  r="135"
+                ></circle>
+                <circle
+                  className="progress-circle"
+                  cx="150"
+                  cy="150"
+                  r="135"
+                ></circle>
+              </svg>
+              <div className="text">
+                Elapsed Time (27%)
+                <span>Completed</span>
+              </div>
+            </div>
+          </div>
         </main>
         <div className="right-side section yellow">Right Sidebar</div>
         <footer className="section coral">Footer</footer>
